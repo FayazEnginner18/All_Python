@@ -38,5 +38,5 @@ numbers=[1,2,3,4,5]
 
 numberss=[1,2,3,4,5,6]
 
-result=reduce(lambda a,b:a*b,numbers)
+result=reduce(lambda a,b:a%2==0,numbers)
 print(result)

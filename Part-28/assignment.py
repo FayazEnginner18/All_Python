@@ -13,5 +13,15 @@ print(list_new)
 print()
 print(list_new2)
 
-filterd=filter(lambda x:x>=70 ,students["score"] )
-print(filterd)
+filterd=filter(lambda x:x["score"]>=70 ,students)
+print(list(filterd))
+
+maped=list(map(lambda x: x["name"],students))
+print(maped)
+print("\n"*2)
+com1=[x for x in students if x["score"] >=70]
+print(com1)
+
+
+com2=[x["name"] for x in students ]
+print(com2)
